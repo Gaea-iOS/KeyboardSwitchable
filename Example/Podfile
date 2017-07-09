@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KeyboardSwitchable_Example' do
+  pod 'KeyboardSwitchable', :path => '../'
+
+  target 'KeyboardSwitchable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
