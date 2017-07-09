@@ -1,0 +1,16 @@
+PODS:
+  - KeyboardSwitchable (0.1.0)
+
+DEPENDENCIES:
+  - KeyboardSwitchable (from `../`)
+
+EXTERNAL SOURCES:
+  KeyboardSwitchable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KeyboardSwitchable: c72b5cd549d3842bc13b390ffc3227cfcf4ae159
+
+PODFILE CHECKSUM: 61b0f22dd44977be3431ea28978802c3a93c76f3
+
+COCOAPODS: 1.2.1
