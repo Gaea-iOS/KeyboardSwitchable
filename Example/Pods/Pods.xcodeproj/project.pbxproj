@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B458F451F11E135008048F9 /* ISEmojiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B458F441F11E135008048F9 /* ISEmojiView.bundle */; };
+		1B9B7B051F1E593200B4E213 /* ISEmojiList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B9B7B041F1E593200B4E213 /* ISEmojiList.plist */; };
 		2D5494D16DE656AFA91D3A8AA8B0033E /* Pods-KeyboardSwitchable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297E0AF2C87F767FA2C929FBAC4FF0 /* Pods-KeyboardSwitchable_Example-dummy.m */; };
 		3F460D72D9EA8CB555942107BE7FAFC5 /* Pods-KeyboardSwitchable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A09BB07DF52554E68E63AB2EECA87FB6 /* Pods-KeyboardSwitchable_Tests-dummy.m */; };
 		401734EEB6C07D0E6E4F51D7E1401640 /* Pods-KeyboardSwitchable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81495D8BE9D6B6EC746C43B30B738727 /* Pods-KeyboardSwitchable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,7 +39,9 @@
 		0A4B77CF8BE7FDD3731042CA03CC37E1 /* KeyboardSwitchable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardSwitchable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD9A648BEED41CB59AB3899AB021DA1 /* KeyboardSwitchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardSwitchable.swift; sourceTree = "<group>"; };
 		142F1F67E523401CA02274A74CDCE1B8 /* KeyboardSwitchable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeyboardSwitchable-dummy.m"; sourceTree = "<group>"; };
-		1B458F441F11E135008048F9 /* ISEmojiView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ISEmojiView.bundle; sourceTree = "<group>"; };
+		1B9B7AFE1F1E586600B4E213 /* ISEmojiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISEmojiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9B7B001F1E586700B4E213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9B7B041F1E593200B4E213 /* ISEmojiList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ISEmojiList.plist; sourceTree = "<group>"; };
 		232340172689A471DFD162597BB89AAD /* Pods_KeyboardSwitchable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardSwitchable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2BEFBEBC39B34658722D2ACE41FAF6 /* Pods-KeyboardSwitchable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KeyboardSwitchable_Example.modulemap"; sourceTree = "<group>"; };
 		3D781032A70F2E52C8851894F316BD44 /* Pods-KeyboardSwitchable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyboardSwitchable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -73,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B9B7AFB1F1E586600B4E213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ED7B40D01684B53D0234AE95294AC5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,12 +133,27 @@
 			path = "Example/Pods/Target Support Files/KeyboardSwitchable";
 			sourceTree = "<group>";
 		};
+		1B9B7AFF1F1E586700B4E213 /* ISEmojiView */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B7B001F1E586700B4E213 /* Info.plist */,
+			);
+			path = ISEmojiView;
+			sourceTree = "<group>";
+		};
+		1B9B7B061F1E59AD00B4E213 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B7B041F1E593200B4E213 /* ISEmojiList.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		29D336AB8E907BE99CDEFA3583BCD8EC /* ISEmojiView */ = {
 			isa = PBXGroup;
 			children = (
 				04E479C38B79A6C1BCA2340EBD5810A0 /* ISEmojiView.swift */,
 				DEA6794338C0AE1B00E6ED1D005F65D1 /* ISEmojiView+KeyboardConvertible.swift */,
-				1B458F441F11E135008048F9 /* ISEmojiView.bundle */,
 			);
 			path = ISEmojiView;
 			sourceTree = "<group>";
@@ -175,6 +199,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				87B52F5D288693669844638C2C142517 /* Development Pods */,
+				1B9B7AFF1F1E586700B4E213 /* ISEmojiView */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				AA371DC0AD1CE58FBB8A61137A488DBA /* Products */,
 				E7FCF41D0068C7F0EDB3D438340D3FAB /* Targets Support Files */,
@@ -184,6 +209,7 @@
 		87B52F5D288693669844638C2C142517 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+				1B9B7B061F1E59AD00B4E213 /* Resource */,
 				04F1ECAB9D6EBBB18764D21CA5F1492F /* KeyboardSwitchable */,
 			);
 			name = "Development Pods";
@@ -195,6 +221,7 @@
 				0A4B77CF8BE7FDD3731042CA03CC37E1 /* KeyboardSwitchable.framework */,
 				B73D75AE32746EC05BC6D77CF7569931 /* Pods_KeyboardSwitchable_Example.framework */,
 				232340172689A471DFD162597BB89AAD /* Pods_KeyboardSwitchable_Tests.framework */,
+				1B9B7AFE1F1E586600B4E213 /* ISEmojiView.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +299,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1B9B7AFD1F1E586600B4E213 /* ISEmojiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9B7B011F1E586700B4E213 /* Build configuration list for PBXNativeTarget "ISEmojiView" */;
+			buildPhases = (
+				1B9B7AFA1F1E586600B4E213 /* Sources */,
+				1B9B7AFB1F1E586600B4E213 /* Frameworks */,
+				1B9B7AFC1F1E586600B4E213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISEmojiView;
+			productName = ISEmojiView;
+			productReference = 1B9B7AFE1F1E586600B4E213 /* ISEmojiView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8B32D13708FF23CDA65382D6AA3F8EA7 /* KeyboardSwitchable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E5382FCC4A94AADE77527944B6538E0 /* Build configuration list for PBXNativeTarget "KeyboardSwitchable" */;
@@ -333,6 +377,12 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1B9B7AFD1F1E586600B4E213 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -349,6 +399,7 @@
 				8B32D13708FF23CDA65382D6AA3F8EA7 /* KeyboardSwitchable */,
 				A359D5BF72574E4E9D60E8AEB350B43B /* Pods-KeyboardSwitchable_Example */,
 				F8FBC863E6AFB061C01A57D7A9F166DC /* Pods-KeyboardSwitchable_Tests */,
+				1B9B7AFD1F1E586600B4E213 /* ISEmojiView */,
 			);
 		};
 /* End PBXProject section */
@@ -358,7 +409,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B458F451F11E135008048F9 /* ISEmojiView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9B7AFC1F1E586600B4E213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9B7B051F1E593200B4E213 /* ISEmojiList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +428,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5494D16DE656AFA91D3A8AA8B0033E /* Pods-KeyboardSwitchable_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9B7AFA1F1E586600B4E213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +470,61 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B9B7B021F1E586700B4E213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ISEmojiView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanagxiaotao.ISEmojiView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1B9B7B031F1E586700B4E213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ISEmojiView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanagxiaotao.ISEmojiView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -726,6 +846,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1B9B7B011F1E586700B4E213 /* Build configuration list for PBXNativeTarget "ISEmojiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9B7B021F1E586700B4E213 /* Debug */,
+				1B9B7B031F1E586700B4E213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
