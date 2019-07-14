@@ -154,7 +154,7 @@ public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDe
     }
     
     private func longPressLocationInEdge(_ location: CGPoint) -> Bool {
-        let edgeRect = UIEdgeInsetsInsetRect(collectionView.bounds, collectionInset)
+        let edgeRect = collectionView.bounds.inset(by: collectionInset)
         return edgeRect.contains(location)
     }
     

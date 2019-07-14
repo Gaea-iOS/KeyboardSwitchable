@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KeyboardSwitchable'
-  s.version          = '0.1.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short description of KeyboardSwitchable.'
 
 # This description is used to generate tags and improve search results.

@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		191F4D578EEDD351D90A2263 /* Pods-KeyboardSwitchable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardSwitchable_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardSwitchable_Example/Pods-KeyboardSwitchable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3284578FBB28EFC6E67E9B49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3EBEF2D7A751FC09EC21E32E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3284578FBB28EFC6E67E9B49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3EBEF2D7A751FC09EC21E32E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KeyboardSwitchable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSwitchable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A185A4BBEB3AECC54B43AE50 /* Pods-KeyboardSwitchable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardSwitchable_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardSwitchable_Tests/Pods-KeyboardSwitchable_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A686E4B0315A943C64D86EE1 /* KeyboardSwitchable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KeyboardSwitchable.podspec; path = ../KeyboardSwitchable.podspec; sourceTree = "<group>"; };
+		A686E4B0315A943C64D86EE1 /* KeyboardSwitchable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KeyboardSwitchable.podspec; path = ../KeyboardSwitchable.podspec; sourceTree = "<group>"; };
 		BBA131D1467330F4B215DE30 /* Pods_KeyboardSwitchable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardSwitchable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66E02511DCADC2B9EBCD281 /* Pods-KeyboardSwitchable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardSwitchable_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardSwitchable_Example/Pods-KeyboardSwitchable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E144489C2E0BAB7F6B4E7D4C /* Pods-KeyboardSwitchable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardSwitchable_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardSwitchable_Tests/Pods-KeyboardSwitchable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -501,7 +502,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -515,7 +516,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
